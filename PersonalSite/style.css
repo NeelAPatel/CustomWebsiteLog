@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: 'Encode Sans', sans-serif;
     color: white;
-    border: 1px solid rgba(255, 255, 255, 1);
+    border: 0px solid rgba(255, 255, 255, 1);
 }
 
 .header-content {
@@ -10,56 +10,50 @@
 }
 
 
+/* PER PANEL DETAILS */
+.widePanel.card {
+    width: 512px;
+    min-width: 512px;
+    margin: auto;
+    background-color: white;
+    border-radius: 2px;
+}
 
-    .panel{
-            width: 512px;
-            min-width: 512px;
-            margin: auto;
-            background-color: white;
-            border-radius: 2px;
-        }
-        
-        .demo-card-wide.mdl-card {
-            width: 512px;
-            min-width: 512px;
-            margin: auto;
-            background-color: white;
-            border-radius: 2px;
-        }
-        
-        .gradient {
-            height: 176px;
-            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
-            /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
-            /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
-            /* For Firefox 3.6 to 15 */
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
-        }
-        
-        .demo-card-wide>.mdl-card__title {
-            color: #fff;
-            height: 176px;
-            background: url('../assets/trial.jpg') center / cover;
-            vertical-align: bottom;
-        }
-        
-        .demo-card-wide>.mdl-card__menu {
-            color: #fff;
-        }
-        
-        .mdl-card__title-text {
-            top: 120px;
-            vertical-align: bottom;
-            text-align: left;
-            position: relative;
-        }
-        
-        .mdl-shadow--2dp {
-            filter: drop-shadow(2px 2px 4px grey);
-        }
-        
-        .mdl-card__supporting-text{
-            color: black;
-        }
+.dropshadow {
+    filter: drop-shadow(2px 2px 4px grey);
+}
+
+.widePanel>.panelTitle {
+    color: #fff;
+    height: 176px;
+    background: url('./assets/trial.jpg') center / cover;
+    vertical-align: bottom;
+}
+
+
+.panelDescription {
+    color: black;
+}
+
+.bottomGradient {
+    height: 176px;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+
+.panelTitleText {
+    top: 130px;
+    vertical-align: bottom;
+    text-align: left;
+    position: relative;
+}
+
+.githubLink {
+    color: black;
+    text-align: center
+}
