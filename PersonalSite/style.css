@@ -1,0 +1,65 @@
+*{
+  box-sizing:border-box;
+  font-family: 'Encode Sans', sans-serif;
+  color: white;
+    border: 1px solid rgba(255, 255, 255, 1);
+    
+}
+
+
+
+.header-content
+{
+    text-align: center;
+}
+
+#header-text {
+    text-align: center;
+}
+
+
+
+.panel {
+    margin: auto;
+    text-align: center;
+    max-width: 512px;
+    min-width: 512px;
+    max-height: 400px;
+}
+
+.panel-image{
+    
+    width: 100%;
+    height: auto;
+    
+    background-repeat:space;
+    
+    max-height: 300px;
+    min-height: 100px;
+    min-width: 100px;
+    max-width: 300px;
+    margin: auto;
+    float: center;
+    
+/*    border: 1px solid red;*/
+}
+
+.panel-info{
+    height:inherit;
+    background-repeat:space;
+    background-size:contain;
+}
+
+
+
+
+table{
+    width: 100%
+}
+
+th {
+   min-height: 100px;
+    max-height: 300px;
+    min-width: 100px;
+    max-width: 300px;
+}
