@@ -1,0 +1,49 @@
+*{
+
+    box-sizing: border-box;
+    font-family: 'Encode Sans', sans-serif;
+    color: white;
+    border: 0px solid rgba(255, 255, 255, 1);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+#headColumn{
+    background-color: coral;
+    height: 100%;
+    width: 300px;
+    display: inline-block;
+    float: left;
+   
+}
+
+
+#name {
+    text-align: center;
+/*    margin: 10px 10px 10px 10px;*/
+    padding: 1px 2px 3px 4px;
+/*    border: 10px 10px 10px 10px;*/
+    font-size: 30px;
+    font-style: bold;
+}
+
+
+#sideBar{
+    float: left;
+    background-color:cornflowerblue;
+    height: 100%;
+    width: 100px;
+    position: relative;
+    
+}
+
+.sideBarIcon{
+    width:100px;
+    height:100px;
+    background:blue;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    top:20%;
+}
