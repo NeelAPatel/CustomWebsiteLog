@@ -15,6 +15,7 @@
     width: 300px;
     display: inline-block;
     float: left;
+    position: fixed;
    
 }
 
@@ -34,7 +35,9 @@
     background-color:cornflowerblue;
     height: 100%;
     width: 100px;
-    position: relative;
+    position:fixed;
+    margin-left: 300px;
+     -webkit-box-shadow: -2px -0px 20px grey;
     
 }
 
@@ -46,4 +49,60 @@
     margin: auto;
     position: relative;
     top:20%;
+}
+
+
+
+
+/* next three sections from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+
+
+.sideBarIcon:hover .middle {
+  opacity: 1;
+}
+
+.text {
+/*  background-color: #4CAF50;*/
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+    text-align: center;
+}
+
+
+
+
+
+.contentArea{
+    float: left;
+    width:auto;
+    height: 4000px;
+/*    Change height to 100% later*/
+    margin-left: 400px;
+    padding: 50px 50px 50px 50px;
+}
+
+#dock {
+    padding: 20px;
+    position: relative;
+    
+}
+
+.dockIcon{
+    margin: auto;
+    position: relative;
+    height="20";
+    width = "20";
+    grid-area: center center;
+    
 }
