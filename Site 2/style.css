@@ -7,14 +7,21 @@
     padding: 0px 0px 0px 0px;
 }
 
+html{
+    background: url(Assets/Wallpaper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 
 /*Header Column */
-
 #headColumn {
-    background: rgba(255, 127, 80, 0.80);
+    background: rgba(100, 149, 237, 0.80);
+/*    background: rgba(255, 127, 80, 0.80);*/
     /* Try to blur this */
     height: 100%;
-    width: 300px;
+    max-width: 300px;
+    min-width: 100px;
+    width: auto;
     display: inline-block;
     float: left;
     position: fixed;
@@ -61,14 +68,16 @@
 
 #sideBar {
     float: left;
-    background: rgba(100, 149, 237, 0.80);
+/*    blue*/
+    background: rgba(20, 20, 20, 0.90);
+    
     /* Try to blur this */
     height: 100%;
     width: 96px;
     position: fixed;
     margin-left: 300px;
     
-    -webkit-box-shadow: -2px -0px 20px dimgrey;
+    -webkit-box-shadow: -2px -0px 25px black;
 }
 
 .sideBarIcon {
@@ -104,6 +113,7 @@
     font-size: 16px;
     padding: 8px 16px;
     text-align: center;
+    vertical-align:middle;
 }
 
 .contentArea {
@@ -116,7 +126,9 @@
 }
 
 
-
+#aboutMe {
+    padding: 50px;
+}
 
 /* =============================================================================
   ICONS - DEMO 4
@@ -232,4 +244,41 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
 
 .icon-border.rss::after {
   background-position: -384px 0;
+}
+
+
+
+/*
+=======================
+Slide out title on hover
+by neel
+=======================
+*/
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .3s ease;
+  left: 96px;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
