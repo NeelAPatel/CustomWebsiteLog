@@ -15,7 +15,7 @@ html{
 
 /*Header Column */
 #headColumn {
-    background: rgba(100, 149, 237, 0.80);
+    background: rgba(52, 52, 127, 0.80);
 /*    background: rgba(255, 127, 80, 0.80);*/
     /* Try to blur this */
     height: 100%;
@@ -73,7 +73,7 @@ html{
     
     /* Try to blur this */
     height: 100%;
-    width: 96px;
+    width: 100px;
     position: fixed;
     margin-left: 300px;
     
@@ -148,8 +148,8 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
 .icon-border {
   position: relative;
   top: 20%;
-  width: 96px;
-  height: 96px;
+  width: 100px;
+  height: 100px;
   display: block;
     
   
@@ -162,8 +162,8 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
   top: 0;
   left: 0;
 
-  width: 96px;
-  height: 96px;
+  width: 100px;
+  height: 100px;
 
   content: "";
  
@@ -177,52 +177,61 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
 
 .icon-border::after {
   z-index: 2;
-  background: url("img/icons4.png");
-  background-image: url("img/icons4.svg"), none;
+  background: url("Assets/sidebarSpritesheet.png");
+  background-image: url("Assets/sidebarSpritesheet.png"), none;
 }
 
-/* facebook */
-.icon-border.facebook::before {
-  box-shadow: inset 0 0 0 48px #3b5998;
+/* aboutMe */
+.icon-border.aboutMe::before {
+  box-shadow: inset 0 0 0 50px #d34836;
 }
 
-.icon-border.facebook:hover::before {
-  box-shadow: inset 0 0 0 4px #3b5998;
-}
-
-.icon-border.facebook::after {
-  background-position: 0 0;
-}
-
-/* twitter */
-.icon-border.twitter::before {
-  box-shadow: inset 0 0 0 48px #4099ff;
-}
-
-.icon-border.twitter:hover::before {
-  box-shadow: inset 0 0 0 4px #4099ff;
-}
-
-.icon-border.twitter::after {
-  background-position: -96px 0;
-}
-
-/* google plus */
-.icon-border.googleplus::before {
-  box-shadow: inset 0 0 0 48px #d34836;
-}
-
-.icon-border.googleplus:hover::before {
+.icon-border.aboutMe:hover::before {
   box-shadow: inset 0 0 0 4px #d34836;
 }
 
-.icon-border.googleplus::after {
-  background-position: -192px 0;
+.icon-border.aboutMe::after {
+  background-position: 0 0;
 }
 
-/* github */
+
+
+/* projects */
+.icon-border.projects::before {
+	/* edge to center of box  = 50px
+	sets div's SHADOW's width to 50 and a color*/
+  box-shadow: inset 0 0 0 50px #ee802f; 
+}
+
+.icon-border.projects:hover::before {
+	/*border becomes a width of 4*/
+  box-shadow: inset 0 0 0 4px #ee802f;
+}
+
+.icon-border.projects::after {
+  background-position: -200px 0;
+}
+
+
+
+
+/* conceptArt */
+.icon-border.conceptArt::before {
+  box-shadow: inset 0 0 0 50px #34d100;
+}
+
+.icon-border.conceptArt:hover::before {
+  box-shadow: inset 0 0 0 4px #34d100;
+}
+
+.icon-border.conceptArt::after {
+  background-position: -100px 0;
+}
+
+
+/*
 .icon-border.github::before {
-  box-shadow: inset 0 0 0 48px #333333;
+  box-shadow: inset 0 0 0 50px #333333;
 }
 
 .icon-border.github:hover::before {
@@ -233,9 +242,9 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
   background-position: -288px 0;
 }
 
-/* rss */
+
 .icon-border.rss::before {
-  box-shadow: inset 0 0 0 48px #ee802f;
+  box-shadow: inset 0 0 0 50px #ee802f;
 }
 
 .icon-border.rss:hover::before {
@@ -245,7 +254,7 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
 .icon-border.rss::after {
   background-position: -384px 0;
 }
-
+*/
 
 
 /*
@@ -264,7 +273,7 @@ by neel
   width: 0;
   height: 100%;
   transition: .3s ease;
-  left: 96px;
+  left: 100px;
 }
 
 .container:hover .overlay {
@@ -282,3 +291,4 @@ by neel
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
