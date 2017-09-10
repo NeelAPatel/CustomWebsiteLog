@@ -1,140 +1,124 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Encode Sans', sans-serif;
-    color: white;
-    border: 0px solid rgba(255, 255, 255, 1);
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+	box-sizing: border-box;
+	font-family: 'Encode Sans', sans-serif;
+	color: white;
+	border: 0px solid rgba(255, 255, 255, 1);
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
-html{
-    background: url(Assets/Wallpaper.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
+html {
+	background: url(Assets/Wallpaper.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
-/*Header Column */
+/*
+========================
+Header Column 
+========================
+*/
+
 #headColumn {
-    background: rgba(52, 52, 127, 0.80);
-/*    background: rgba(255, 127, 80, 0.80);*/
-    /* Try to blur this */
-    height: 100%;
-    max-width: 300px;
-    min-width: 100px;
-    width: auto;
-    display: inline-block;
-    float: left;
-    position: fixed;
+	background: rgba(52, 52, 127, 0.80);
+	/*    background: rgba(255, 127, 80, 0.80);*/
+	/* Try to blur this */
+	height: 100%;
+	max-width: 300px;
+	min-width: 100px;
+	width: auto;
+	display: inline-block;
+	float: left;
+	position: fixed;
 }
 
 #headPicture {
-    width: 250px;
-    height: 250px;
-    background-color: firebrick;
-    border-radius: 10px;
-    margin: 25px 25px 25px 25px;
-    display: inline-block;
+	width: 250px;
+	height: 250px;
+	background-color: firebrick;
+	border-radius: 10px;
+	margin: 25px 25px 25px 25px;
+	display: inline-block;
+	-webkit-box-shadow: -2px -0px 25px black;
 }
 
 #name {
-    text-align: center;
-    /*    margin: 10px 10px 10px 10px;*/
-    padding: 5px 5px 5px 5px;
-    /*    border: 10px 10px 10px 10px;*/
-    font-size: 30px;
-    font-style: bold;
+	text-align: center;
+	/*    margin: 10px 10px 10px 10px;*/
+	padding: 5px 5px 5px 5px;
+	/*    border: 10px 10px 10px 10px;*/
+	font-size: 30px;
+	font-style: bold;
 }
 
 #description {
-    padding: 5px 5px 5px 5px;
-    text-align: center;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
 }
 
 #dock {
-    padding: 20px;
-    position: relative;
+	padding: 20px;
+	position: relative;
 }
 
 .dockIcon {
-    margin: auto;
-    position: relative;
-    height="20";
-    width="20";
-    grid-area: center center;
+	margin: auto;
+	position: relative;
+	height="20";
+	width="20";
+	grid-area: center center;
 }
 
 
-/* Sidebar*/
+/*
+========================
+Sidebar
+========================
+*/
 
 #sideBar {
-    float: left;
-/*    blue*/
-    background: rgba(20, 20, 20, 0.90);
-    
-    /* Try to blur this */
-    height: 100%;
-    width: 100px;
-    position: fixed;
-    margin-left: 300px;
-    
-    -webkit-box-shadow: -2px -0px 25px black;
+	float: left;
+	/*    blue*/
+	background: rgba(20, 20, 20, 0.90);
+	/* Try to blur this */
+	height: 100%;
+	width: 100px;
+	position: fixed;
+	margin-left: 300px;
+	-webkit-box-shadow: -2px -0px 25px black;
 }
 
 .sideBarIcon {
-    width: 100px;
-    height: 100px;
-    background: blue;
-    border-radius: 10px;
-    margin: auto;
-    position: relative;
-    top: 20%;
-}
-
-
-/* next three sections from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-}
-
-.sideBarIcon:hover .middle {
-    opacity: 1;
-}
-
-.text {
-    /*  background-color: #4CAF50;*/
-    color: white;
-    font-size: 16px;
-    padding: 8px 16px;
-    text-align: center;
-    vertical-align:middle;
+	width: 100px;
+	height: 100px;
+	background: blue;
+	border-radius: 10px;
+	margin: auto;
+	position: relative;
+	top: 20%;
 }
 
 .contentArea {
-    float: left;
-    width: auto;
-    height: 4000px;
-    /*    Change height to 100% later*/
-    margin-left: 400px;
-    padding: 50px 50px 50px 50px;
+	float: left;
+	width: auto;
+	height: 4000px;
+	/*    Change height to 100% later*/
+	margin-left: 400px;
+	padding: 50px 50px 50px 50px;
 }
 
-
-#aboutMe {
-    padding: 50px;
+#aboutMeContent {
+	padding: 50px;
 }
+
 
 /* =============================================================================
   ICONS - DEMO 4
 ============================================================================= 
 
 http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
+
+
 /**
  * "icon-border" class name used to indicate an icon that has an animated border
  * effect.
@@ -145,117 +129,96 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
  * <a href="#" class="icon icon-border twitter">twitter</a>
  * ...
  */
+
 .icon-border {
-  position: relative;
-  top: 20%;
-  width: 100px;
-  height: 100px;
-  display: block;
-    
-  
+	position: relative;
+	top: 20%;
+	width: 100px;
+	height: 100px;
+	display: block;
 }
 
 .icon-border::before,
 .icon-border::after {
- display:inline;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100px;
-  height: 100px;
-
-  content: "";
- 
+	display: inline;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	content: "";
 }
 
 .icon-border::before {
-  z-index: 1;
-  -webkit-transition: box-shadow 0.3s;
-          transition: box-shadow 0.3s;
+	z-index: 1;
+	-webkit-transition: box-shadow 0.3s;
+	transition: box-shadow 0.3s;
 }
 
 .icon-border::after {
-  z-index: 2;
-  background: url("Assets/sidebarSpritesheet.png");
-  background-image: url("Assets/sidebarSpritesheet.png"), none;
+	z-index: 2;
+	background: url("Assets/sidebarSpritesheet.png");
+	background-image: url("Assets/sidebarSpritesheet.png"), none;
 }
 
+
 /* aboutMe */
+
 .icon-border.aboutMe::before {
-  box-shadow: inset 0 0 0 50px #d34836;
+	box-shadow: inset 0 0 0 50px #d34836;
 }
 
 .icon-border.aboutMe:hover::before {
-  box-shadow: inset 0 0 0 4px #d34836;
+	box-shadow: inset 0 0 0 4px #d34836;
 }
 
 .icon-border.aboutMe::after {
-  background-position: 0 0;
+	background-position: 0 0;
+}
+
+.aboutMe > .overlay {
+	background-color: #d34836;
 }
 
 
-
 /* projects */
+
 .icon-border.projects::before {
 	/* edge to center of box  = 50px
 	sets div's SHADOW's width to 50 and a color*/
-  box-shadow: inset 0 0 0 50px #ee802f; 
+	box-shadow: inset 0 0 0 50px #ee802f;
 }
 
 .icon-border.projects:hover::before {
 	/*border becomes a width of 4*/
-  box-shadow: inset 0 0 0 4px #ee802f;
+	box-shadow: inset 0 0 0 4px #ee802f;
 }
 
 .icon-border.projects::after {
-  background-position: -200px 0;
+	background-position: -200px 0;
 }
 
-
-
+.projects > .overlay {
+	background-color: #ee802f;
+}
 
 /* conceptArt */
+
 .icon-border.conceptArt::before {
-  box-shadow: inset 0 0 0 50px #34d100;
+	box-shadow: inset 0 0 0 50px #34d100;
 }
 
 .icon-border.conceptArt:hover::before {
-  box-shadow: inset 0 0 0 4px #34d100;
+	box-shadow: inset 0 0 0 4px #34d100;
 }
 
 .icon-border.conceptArt::after {
-  background-position: -100px 0;
+	background-position: -100px 0;
 }
 
-
-/*
-.icon-border.github::before {
-  box-shadow: inset 0 0 0 50px #333333;
+.conceptArt > .overlay {
+	background-color: #34d100;
 }
-
-.icon-border.github:hover::before {
-  box-shadow: inset 0 0 0 4px #333333;
-}
-
-.icon-border.github::after {
-  background-position: -288px 0;
-}
-
-
-.icon-border.rss::before {
-  box-shadow: inset 0 0 0 50px #ee802f;
-}
-
-.icon-border.rss:hover::before {
-  box-shadow: inset 0 0 0 4px #ee802f;
-}
-
-.icon-border.rss::after {
-  background-position: -384px 0;
-}
-*/
-
 
 /*
 =======================
@@ -265,30 +228,30 @@ by neel
 */
 
 .overlay {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .3s ease;
-  left: 100px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .3s ease;
+	left: 100px;
 }
 
+
 .container:hover .overlay {
-  width: 100%;
+	width: 120%;
+	-webkit-box-shadow: inset 10px 0px 25px -5px black;
 }
 
 .text {
-  white-space: nowrap; 
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+	white-space: nowrap;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
-
