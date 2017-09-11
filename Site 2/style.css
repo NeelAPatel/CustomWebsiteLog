@@ -20,7 +20,8 @@ Header Column
 */
 
 #headColumn {
-	background: rgba(52, 52, 127, 0.80);
+	background: rgba(175, 49, 49, 0.8)
+		;
 	/*    background: rgba(255, 127, 80, 0.80);*/
 	/* Try to blur this */
 	height: 100%;
@@ -36,10 +37,14 @@ Header Column
 	width: 250px;
 	height: 250px;
 	background-color: firebrick;
-	border-radius: 10px;
 	margin: 25px 25px 25px 25px;
 	display: inline-block;
 	-webkit-box-shadow: -2px -0px 25px black;
+		
+	background-image: url("Assets/NeelFace.png"), none;
+	background-size: 300px 300px;
+	background-position: -25px -25px;
+	
 }
 
 #name {
@@ -163,13 +168,13 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
 
 
 /* aboutMe */
-
+/*#d34836*/
 .icon-border.aboutMe::before {
-	box-shadow: inset 0 0 0 50px #d34836;
+	box-shadow: inset 0 0 0 50px #3b81de;
 }
 
 .icon-border.aboutMe:hover::before {
-	box-shadow: inset 0 0 0 4px #d34836;
+	box-shadow: inset 0 0 0 4px #3b81de;
 }
 
 .icon-border.aboutMe::after {
@@ -177,7 +182,7 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
 }
 
 .aboutMe > .overlay {
-	background-color: #d34836;
+	background-color: #3b81de;
 }
 
 
