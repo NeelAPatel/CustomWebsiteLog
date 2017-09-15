@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Encode Sans', sans-serif;
-    color: blue;
+    color: white;
     border: 0px solid rgba(255, 255, 255, 1);
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -283,17 +283,20 @@ by neel
     padding: 50px;
     padding-top: 100px;
     height: 100%;
+    display:
 }
 
 
 /*============== Projects ======= */
 .cardGridX{
-    
+    overflow-x:scroll;
+    overflow-y:hidden;
+    height: 100%;
 }
 .cardContainerX{
     background: rgba(100,100,100,1);
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 400px;
     margin: 10px;
     position: relative;
     float: left;

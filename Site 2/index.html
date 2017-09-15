@@ -6,72 +6,87 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Smooth Scrolling 
 https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-          // Store hash
-          var hash = this.hash;
+                    // Store hash
+                    var hash = this.hash;
 
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
 
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
     </script>
     <!-- /smooth scrolling-->
-    
-    
-    <script>
-          $(document).ready(function () {
 
-    $(document).on('click.card', '.card', function (e) {
-      if ($(this).find('> .card-reveal').length) {
-        var $card = $(e.target).closest('.card');
-        if ($card.data('initialOverflow') === undefined) {
-          $card.data('initialOverflow', $card.css('overflow') === undefined ? '' : $card.css('overflow'));
-        }
-        if ($(e.target).is($('.card-reveal .card-title')) || $(e.target).is($('.card-reveal .card-title i'))) {
-          // Make Reveal animate down and display none
-          $(this).find('.card-reveal').velocity({ translateY: 0 }, {
-            duration: 225,
-            queue: false,
-            easing: 'easeInOutQuad',
-            complete: function () {
-              $(this).css({ display: 'none' });
-              $card.css('overflow', $card.data('initialOverflow'));
+
+    <!--
+<script>
+    $(document).ready(function() {
+
+        $(document).on('click.card', '.card', function(e) {
+            if ($(this).find('> .card-reveal').length) {
+                var $card = $(e.target).closest('.card');
+                if ($card.data('initialOverflow') === undefined) {
+                    $card.data('initialOverflow', $card.css('overflow') === undefined ? '' : $card.css('overflow'));
+                }
+                if ($(e.target).is($('.card-reveal .card-title')) || $(e.target).is($('.card-reveal .card-title i'))) {
+                    // Make Reveal animate down and display none
+                    $(this).find('.card-reveal').velocity({
+                        translateY: 0
+                    }, {
+                        duration: 225,
+                        queue: false,
+                        easing: 'easeInOutQuad',
+                        complete: function() {
+                            $(this).css({
+                                display: 'none'
+                            });
+                            $card.css('overflow', $card.data('initialOverflow'));
+                        }
+                    });
+                } else if ($(e.target).is($('.card .activator')) || $(e.target).is($('.card .activator i'))) {
+                    $card.css('overflow', 'hidden');
+                    $(this).find('.card-reveal').css({
+                        display: 'block'
+                    }).velocity("stop", false).velocity({
+                        translateY: '-100%'
+                    }, {
+                        duration: 300,
+                        queue: false,
+                        easing: 'easeInOutQuad'
+                    });
+                }
             }
-          });
-        } else if ($(e.target).is($('.card .activator')) || $(e.target).is($('.card .activator i'))) {
-          $card.css('overflow', 'hidden');
-          $(this).find('.card-reveal').css({ display: 'block' }).velocity("stop", false).velocity({ translateY: '-100%' }, { duration: 300, queue: false, easing: 'easeInOutQuad' });
-        }
-      }
+        });
     });
-  });
-    </script>
-    
-    
+</script>
+-->
 
-    
+
+
+
 </head>
 
 <body>
@@ -141,93 +156,164 @@ https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smooth
             <br>
             <p> Technology was always in my blood so it surprised no one when I took interest in computer programming in the 8th grade. After having my parents enroll me in some Java classes, it sparked a fire that hasn't died till this day.</p>
             <br>
-            
+
 
         </div>
 
         <div id="projectsContent">
             <h1> Projects Header </h1>
-            
-            
+
+
             <!--
 ===============================
     FROM GOOGLE MDL DESIGN WEBSITE
 ====================================
             -->
-            
+
             <div class="cardGridX">
-<!--                <a href="#">-->
-                <div class="cardContainerX">
-                    <div class="cardX">
-                        <div class="cardTitleX">
-                        <h3 class="cardtextX"> title </h3>
-                            <p> stuffs</p>
-                        </div>
-                        <div class="cardDescriptionX">
-                            
-                        </div>
-                    </div>                    
-                </div>
-<!--                </a>-->
-                
                 <!--                <a href="#">-->
-                <div class="cardContainerX">
-                    <div class="cardX">
-                        <div class="cardTitleX">
-                        <h3 class="cardtextX"> title </h3>
-                            <p> stuffs</p>
+                <div class="page1">
+                    <div class="cardContainerX">
+                        <div class="cardX">
+                            <div class="cardTitleX">
+                                <h3 class="cardtextX"> 111111 </h3>
+                                <p> stuffs</p>
+                            </div>
+                            <div class="cardDescriptionX">
+
+                            </div>
                         </div>
-                        <div class="cardDescriptionX">
-                            
+                    </div>
+                    <div class="cardContainerX">
+                        <div class="cardX">
+                            <div class="cardTitleX">
+                                <h3 class="cardtextX"> title </h3>
+                                <p> stuffs</p>
+                            </div>
+                            <div class="cardDescriptionX">
+
+                            </div>
                         </div>
-                    </div>                    
+                    </div>
+                    <div class="cardContainerX">
+                        <div class="cardX">
+                            <div class="cardTitleX">
+                                <h3 class="cardtextX"> title </h3>
+                                <p> stuffs</p>
+                            </div>
+                            <div class="cardDescriptionX">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardContainerX">
+                        <div class="cardX">
+                            <div class="cardTitleX">
+                                <h3 class="cardtextX"> title </h3>
+                                <p> stuffs</p>
+                            </div>
+                            <div class="cardDescriptionX">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-<!--                </a>-->
-                
-                                <!--                <a href="#">-->
-                <div class="cardContainerX">
-                    <div class="cardX">
-                        <div class="cardTitleX">
-                        <h3 class="cardtextX"> title </h3>
-                            <p> stuffs</p>
+                <div class="page2">
+                    <div class="cardContainerX">
+                        <div class="cardX">
+                            <div class="cardTitleX">
+                                <h3 class="cardtextX"> 2222222 </h3>
+                                <p> stuffs</p>
+                            </div>
+                            <div class="cardDescriptionX">
+
+                            </div>
                         </div>
-                        <div class="cardDescriptionX">
-                            
+                    </div>
+                    <div class="cardContainerX">
+                        <div class="cardX">
+                            <div class="cardTitleX">
+                                <h3 class="cardtextX"> title </h3>
+                                <p> stuffs</p>
+                            </div>
+                            <div class="cardDescriptionX">
+
+                            </div>
                         </div>
-                    </div>                    
+                    </div>
+                    <div class="cardContainerX">
+                        <div class="cardX">
+                            <div class="cardTitleX">
+                                <h3 class="cardtextX"> title </h3>
+                                <p> stuffs</p>
+                            </div>
+                            <div class="cardDescriptionX">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardContainerX">
+                        <div class="cardX">
+                            <div class="cardTitleX">
+                                <h3 class="cardtextX"> title </h3>
+                                <p> stuffs</p>
+                            </div>
+                            <div class="cardDescriptionX">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-<!--                </a>-->
-                
-                                <!--                <a href="#">-->
-                <div class="cardContainerX">
-                    <div class="cardX">
-                        <div class="cardTitleX">
-                        <h3 class="cardtextX"> title </h3>
-                            <p> stuffs</p>
+                <div class="page3">
+                    <div class="cardContainerX">
+                        <div class="cardX">
+                            <div class="cardTitleX">
+                                <h3 class="cardtextX"> 333333 </h3>
+                                <p> stuffs</p>
+                            </div>
+                            <div class="cardDescriptionX">
+
+                            </div>
                         </div>
-                        <div class="cardDescriptionX">
-                            
+                    </div>
+                    <div class="cardContainerX">
+                        <div class="cardX">
+                            <div class="cardTitleX">
+                                <h3 class="cardtextX"> title </h3>
+                                <p> stuffs</p>
+                            </div>
+                            <div class="cardDescriptionX">
+
+                            </div>
                         </div>
-                    </div>                    
+                    </div>
+                    <div class="cardContainerX">
+                        <div class="cardX">
+                            <div class="cardTitleX">
+                                <h3 class="cardtextX"> title </h3>
+                                <p> stuffs</p>
+                            </div>
+                            <div class="cardDescriptionX">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardContainerX">
+                        <div class="cardX">
+                            <div class="cardTitleX">
+                                <h3 class="cardtextX"> title </h3>
+                                <p> stuffs</p>
+                            </div>
+                            <div class="cardDescriptionX">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-<!--                </a>-->
-                
-                                <!--                <a href="#">-->
-                <div class="cardContainerX">
-                    <div class="cardX">
-                        <div class="cardTitleX">
-                        <h3 class="cardtextX"> title </h3>
-                            <p> stuffs</p>
-                        </div>
-                        <div class="cardDescriptionX">
-                            
-                        </div>
-                    </div>                    
-                </div>
-<!--                </a>-->
-                
+                <!--                </a>-->
+
                 <!--                <a href="#">-->
-<!--
+                <!--
                 <div class="cardContainer">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
@@ -245,12 +331,41 @@ https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smooth
                 </div> Card area end 
 -->
 
-            </div> <!-- card grid -->
+            </div>
+            <!-- card grid -->
             
-            
-            
-            
-            
+            <style>
+            .pagination {
+                display: inline-block;
+                color:white;
+            }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                color:white;
+            }
+
+            .pagination a.active {
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            .pagination a:hover:not(.active) {background-color: #ddd;}
+            </style>
+
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a class="active" href="#page1">1</a>
+              <a href="#page2">2</a>
+              <a href="#page3">3</a>
+              <a href="#">&raquo;</a>
+            </div>
+
+
+
         </div>
 
         <div id="conceptArtContent">
