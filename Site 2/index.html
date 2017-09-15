@@ -2,7 +2,52 @@
 
 <head>
     <title>Neel Patel | Website 2</title>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        * {
+            box-sizing: border-box;
+            
+        }
+        
+        .slider {
+            width: 50%;
+            margin: 100px auto;
+        }
+        
+        .slick-slide {
+            margin: 0px 20px;
+        }
+        
+        .slick-slide img {
+            width: 100%;
+        }
+        
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+        
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+        
+        .slick-active {
+            opacity: .5;
+        }
+        
+        .slick-current {
+            opacity: 1;
+        }
 
+    </style>
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,50 +84,6 @@ https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smooth
 
     </script>
     <!-- /smooth scrolling-->
-
-
-    <!--
-<script>
-    $(document).ready(function() {
-
-        $(document).on('click.card', '.card', function(e) {
-            if ($(this).find('> .card-reveal').length) {
-                var $card = $(e.target).closest('.card');
-                if ($card.data('initialOverflow') === undefined) {
-                    $card.data('initialOverflow', $card.css('overflow') === undefined ? '' : $card.css('overflow'));
-                }
-                if ($(e.target).is($('.card-reveal .card-title')) || $(e.target).is($('.card-reveal .card-title i'))) {
-                    // Make Reveal animate down and display none
-                    $(this).find('.card-reveal').velocity({
-                        translateY: 0
-                    }, {
-                        duration: 225,
-                        queue: false,
-                        easing: 'easeInOutQuad',
-                        complete: function() {
-                            $(this).css({
-                                display: 'none'
-                            });
-                            $card.css('overflow', $card.data('initialOverflow'));
-                        }
-                    });
-                } else if ($(e.target).is($('.card .activator')) || $(e.target).is($('.card .activator i'))) {
-                    $card.css('overflow', 'hidden');
-                    $(this).find('.card-reveal').css({
-                        display: 'block'
-                    }).velocity("stop", false).velocity({
-                        translateY: '-100%'
-                    }, {
-                        duration: 300,
-                        queue: false,
-                        easing: 'easeInOutQuad'
-                    });
-                }
-            }
-        });
-    });
-</script>
--->
 
 
 
@@ -159,223 +160,65 @@ https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smooth
 
 
         </div>
-
+        <!-- ========================================================= PROJECTS =================================-->
         <div id="projectsContent">
             <h1> Projects Header </h1>
 
-
-            <!--
-===============================
-    FROM GOOGLE MDL DESIGN WEBSITE
-====================================
-            -->
-
-            <div class="cardGridX">
-                <!--                <a href="#">-->
-                <div class="page1">
-                    <div class="cardContainerX">
-                        <div class="cardX">
-                            <div class="cardTitleX">
-                                <h3 class="cardtextX"> 111111 </h3>
-                                <p> stuffs</p>
-                            </div>
-                            <div class="cardDescriptionX">
-
-                            </div>
-                        </div>
+            <div class="panel">
+                <section class="variable slider panel">
+                    <div>
+                        <img src="http://placehold.it/350x300?text=1">
                     </div>
-                    <div class="cardContainerX">
-                        <div class="cardX">
-                            <div class="cardTitleX">
-                                <h3 class="cardtextX"> title </h3>
-                                <p> stuffs</p>
-                            </div>
-                            <div class="cardDescriptionX">
-
-                            </div>
-                        </div>
+                    <div>
+                        <img src="http://placehold.it/200x300?text=2">
                     </div>
-                    <div class="cardContainerX">
-                        <div class="cardX">
-                            <div class="cardTitleX">
-                                <h3 class="cardtextX"> title </h3>
-                                <p> stuffs</p>
-                            </div>
-                            <div class="cardDescriptionX">
-
-                            </div>
-                        </div>
+                    <div>
+                        <img src="http://placehold.it/100x300?text=3">
                     </div>
-                    <div class="cardContainerX">
-                        <div class="cardX">
-                            <div class="cardTitleX">
-                                <h3 class="cardtextX"> title </h3>
-                                <p> stuffs</p>
-                            </div>
-                            <div class="cardDescriptionX">
-
-                            </div>
-                        </div>
+                    <div>
+                        <img src="http://placehold.it/200x300?text=4">
                     </div>
-                </div>
-                <div class="page2">
-                    <div class="cardContainerX">
-                        <div class="cardX">
-                            <div class="cardTitleX">
-                                <h3 class="cardtextX"> 2222222 </h3>
-                                <p> stuffs</p>
-                            </div>
-                            <div class="cardDescriptionX">
-
-                            </div>
-                        </div>
+                    <div>
+                        <img src="http://placehold.it/350x300?text=5">
                     </div>
-                    <div class="cardContainerX">
-                        <div class="cardX">
-                            <div class="cardTitleX">
-                                <h3 class="cardtextX"> title </h3>
-                                <p> stuffs</p>
-                            </div>
-                            <div class="cardDescriptionX">
-
-                            </div>
-                        </div>
+                    <div>
+                        <img src="http://placehold.it/300x300?text=6">
                     </div>
-                    <div class="cardContainerX">
-                        <div class="cardX">
-                            <div class="cardTitleX">
-                                <h3 class="cardtextX"> title </h3>
-                                <p> stuffs</p>
-                            </div>
-                            <div class="cardDescriptionX">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardContainerX">
-                        <div class="cardX">
-                            <div class="cardTitleX">
-                                <h3 class="cardtextX"> title </h3>
-                                <p> stuffs</p>
-                            </div>
-                            <div class="cardDescriptionX">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="page3">
-                    <div class="cardContainerX">
-                        <div class="cardX">
-                            <div class="cardTitleX">
-                                <h3 class="cardtextX"> 333333 </h3>
-                                <p> stuffs</p>
-                            </div>
-                            <div class="cardDescriptionX">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardContainerX">
-                        <div class="cardX">
-                            <div class="cardTitleX">
-                                <h3 class="cardtextX"> title </h3>
-                                <p> stuffs</p>
-                            </div>
-                            <div class="cardDescriptionX">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardContainerX">
-                        <div class="cardX">
-                            <div class="cardTitleX">
-                                <h3 class="cardtextX"> title </h3>
-                                <p> stuffs</p>
-                            </div>
-                            <div class="cardDescriptionX">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardContainerX">
-                        <div class="cardX">
-                            <div class="cardTitleX">
-                                <h3 class="cardtextX"> title </h3>
-                                <p> stuffs</p>
-                            </div>
-                            <div class="cardDescriptionX">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--                </a>-->
-
-                <!--                <a href="#">-->
-                <!--
-                <div class="cardContainer">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/office.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                          <p><a href="#">This is a link</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                  </div>         
-                </div> Card area end 
--->
-
+                </section>
             </div>
             <!-- card grid -->
-            
-            <style>
-            .pagination {
-                display: inline-block;
-                color:white;
-            }
-
-            .pagination a {
-                color: black;
-                float: left;
-                padding: 8px 16px;
-                text-decoration: none;
-                color:white;
-            }
-
-            .pagination a.active {
-                background-color: #4CAF50;
-                color: white;
-            }
-
-            .pagination a:hover:not(.active) {background-color: #ddd;}
-            </style>
-
+            <!--            Pagination div-->
             <div class="pagination">
-              <a href="#">&laquo;</a>
-              <a class="active" href="#page1">1</a>
-              <a href="#page2">2</a>
-              <a href="#page3">3</a>
-              <a href="#">&raquo;</a>
+                <a href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">&raquo;</a>
             </div>
 
 
 
         </div>
 
+        <!--        ======================================== CONCEPT ART ==========================================-->
         <div id="conceptArtContent">
             <h1> ConceptArt Header </h1>
         </div>
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(document).on('ready', function() {
+              
+                $(".variable").slick({
+                    dots: true,
+                    infinite: true,
+                    variableWidth: true
+                });
+            });
 
+        </script>
 
     </div>
-
-
 
 
 </body>

@@ -85,3 +85,8 @@ h2 {
     margin-bottom: 0px;
 }
 
+
+.panel {
+    width: 800px;
+    height: auto;
+}
