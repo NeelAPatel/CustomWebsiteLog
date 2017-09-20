@@ -87,6 +87,8 @@ h2 {
 
 
 .panel {
-    width: 800px;
-    height: auto;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    float:left;
 }
