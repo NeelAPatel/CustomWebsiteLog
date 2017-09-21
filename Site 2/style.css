@@ -383,3 +383,21 @@ by neel
     width: auto;
 }
 
+.TagHTML {
+    background: rgba(241, 101, 41, 1);
+    border-radius: 3px;
+    padding: 2px;
+    width: auto;
+}
+.TagCSS {
+    background: rgba(103, 33, 122, 1);
+    border-radius: 3px;
+    padding: 2px;
+    width: auto;
+}
+.TagJava {
+    background: rgba(103, 33, 122, 1);
+    border-radius: 3px;
+    padding: 2px;
+    width: auto;
+}
