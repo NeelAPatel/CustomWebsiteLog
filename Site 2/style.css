@@ -309,17 +309,16 @@ by neel
 }
 
 .cardContainerX {
-    background: rgba(255, 255, 255, 1);
-    border-radius: 5px;
-    min-height: 40%;
-    min-width: 40%;
+	/*
+    background: rgba(100, 100, 100, 1);
+    border-radius: 0px;
+    min-height: 50px;
+    min-width: 50px;
+	height: 30%;
+	width: 30%;
     margin: 15px;
-    position: relative;
-    float: left;
-    color: black;
-    -webkit-box-shadow: -2px -0px 25px black;
-    -moz-box-shadow: -2px -0px 25px black;
-    box-shadow: -2px -0px 25px black;
+    color: black;*/
+    
 }
 
 .cardTitleX {
