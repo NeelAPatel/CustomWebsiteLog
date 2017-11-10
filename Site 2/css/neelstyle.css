@@ -10,6 +10,7 @@ html {
     /*background: url(Assets/Wallpaper.jpg) no-repeat center center fixed;*/
     /*    -webkit-background-size: cover;*/
     background-size: cover;
+    background-color: rgb(253, 226, 226);
 }
 
 
@@ -274,7 +275,7 @@ by neel
     width: auto;
     height: 100%;
     /*    Change height to 100% later*/
-    /*margin-left: 400px;*/
+    margin-left: 400px;
     padding: 0px 50px 50px 50px;
 }
 
