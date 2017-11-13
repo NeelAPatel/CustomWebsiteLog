@@ -1,3 +1,4 @@
+/*
 * {
     box-sizing: border-box;
     font-family: 'Encode Sans', sans-serif;
@@ -6,23 +7,22 @@
     margin: 0px;
 }
 
+
+*/
+
 html {
-    /*background: url(Assets/Wallpaper.jpg) no-repeat center center fixed;*/
-    /*    -webkit-background-size: cover;*/
+
     background-size: cover;
 }
-
 
 /*
 ========================
 Header Column 
 ========================
-*/
+
 
 #headColumn {
     background: rgba(175, 49, 49, 0.8);
-    /*    background: rgba(255, 127, 80, 0.80);*/
-    /* Try to blur this */
     height: 100%;
     max-width: 300px;
     min-width: 100px;
@@ -48,9 +48,7 @@ Header Column
 
 #name {
     text-align: center;
-    /*    margin: 10px 10px 10px 10px;*/
     padding: 5px 5px 5px 5px;
-    /*    border: 10px 10px 10px 10px;*/
     font-size: 30px;
     font-style: bold;
 }
@@ -73,25 +71,26 @@ Header Column
     grid-area: center center;
 }
 
+*/
 
 /*
 ========================
 Sidebar
 ========================
-*/
+
 
 #sideBar {
     float: left;
     /*    blue*/
-    background: rgba(20, 20, 20, 0.90);
-    /* Try to blur this */
-    height: 100%;
-    width: 100px;
-    position: fixed;
-    margin-left: 300px;
-    -webkit-box-shadow: -2px -0px 25px black;
-    -moz-box-shadow: -2px -0px 25px black;
-    box-shadow: -2px -0px 25px black;
+
+background: rgba(20, 20, 20, 0.90);
+height: 100%;
+width: 100px;
+position: fixed;
+margin-left: 300px;
+-webkit-box-shadow: -2px -0px 25px black;
+-moz-box-shadow: -2px -0px 25px black;
+box-shadow: -2px -0px 25px black;
 }
 
 .sideBarIcon {
@@ -105,13 +104,12 @@ Sidebar
     z-index: 99999;
 }
 
-
+*/
 /* =============================================================================
   ICONS - DEMO 4
 ============================================================================= 
 
 http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
-
 
 /**
  * "icon-border" class name used to indicate an icon that has an animated border
@@ -159,9 +157,6 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
 
 /* aboutMe */
 
-
-/*#d34836*/
-
 .icon-border.aboutMe::before {
     box-shadow: inset 0 0 0 50px #3b81de;
     z-index: 99999;
@@ -177,7 +172,7 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
     z-index: 99999;
 }
 
-.aboutMe>.overlay {
+.aboutMe > .overlay {
     background-color: #3b81de;
     z-index: 99999;
 }
@@ -203,7 +198,7 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
     z-index: 99999;
 }
 
-.projects>.overlay {
+.projects > .overlay {
     background-color: #ee802f;
     z-index: 99999;
 }
@@ -226,7 +221,7 @@ http://callmenick.com/post/nicer-icon-hover-effects-with-css3-transitions*/
     z-index: 99999;
 }
 
-.conceptArt>.overlay {
+.conceptArt > .overlay {
     background-color: #34d100;
     z-index: 99999;
 }
@@ -271,11 +266,10 @@ by neel
 
 .contentArea {
     float: left;
-    width: auto;
+    width: 100%;
     height: 100%;
     /*    Change height to 100% later*/
     /*margin-left: 400px;*/
-    padding: 0px 50px 50px 50px;
 }
 
 #aboutMeContent {
@@ -286,71 +280,15 @@ by neel
 
 #projectsContent {
     /*    padding: 50px;*/
-    sborder: 50px;
-    padding-top: 100px;
     padding: 50px;
+
     height: auto;
 }
 
 #conceptArtContent {
     padding: 50px;
-    padding-top: 100px;
+
     height: auto;
-}
-
-
-/*============== Projects ======= */
-
-.cardGridX {
-    height: auto;
-    width: auto;
-    overflow: auto;
-    color: black;
-}
-
-.cardContainerX {
-	/*
-    background: rgba(100, 100, 100, 1);
-    border-radius: 0px;
-    min-height: 50px;
-    min-width: 50px;
-	height: 30%;
-	width: 30%;
-    margin: 15px;
-    color: black;*/
-    
-}
-
-.cardTitleX {
-    /*    height: 20px;*/
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-    color: black;
-}
-
-.cardTextX {
-    font-size: 1em;
-    position: absolute;
-    overflow: hidden;
-    padding: 5%;
-    color: black;
-}
-
-.footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    text-align: center;
-    color: black;
-}
-
-.cardImageX {
-    background: url('./Assets/Wallpaper.jpg') center / cover;
-    height: 20%;
-    border-radius: 5px 5px 0px 0px;
 }
 
 .langDock {
@@ -413,12 +351,139 @@ by neel
     width: auto;
 }
 
-.cardLink {
+
+
+
+
+
+
+
+
+
+.transition {
+    transition: .3s cubic-bezier(.3, 0, 0, 1.3)
+}
+
+.card {
+    background-color: #fff;
+    bottom: 0;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    height: 300px;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
     position: absolute;
     right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
+    top: 0;
+    width: 300px;
+}
+
+.card:hover {
+    height: 450px;
+    width: 300px;
+}
+
+.card:hover .cta-container {
+    display: inline;
+    margin-top: 380px;
+}
+
+.card:hover .card_circle {
+    background-size: cover;
+    border-radius: 0;
+    margin-top: -130px;
+}
+
+.card:hover h2 {
+    background: #3487f7;
+    color: #fff;
+    margin-top: 100px;
+    padding: 5px;
+}
+
+.card:hover h2 small {
+    color: #fff
+}
+
+.card:hover p {
+    margin-top: 300px
+}
+
+.card_circle {
+    background: url('http://lorempixel.com/400/200') no-repeat center bottom;
+    background-color: #3487f7;
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -270px;
+    position: absolute;
+    width: 450px;
+}
+
+h2 {
+    color: #3487f7;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: 150px;
+    position: absolute;
     text-align: center;
-    color: black;
+    width: 100%;
+    z-index: 9999;
+}
+
+p {
+    color: rgba(0, 0, 0, .6);
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    margin-top: 200px;
+    position: absolute;
+    text-align: center;
+    z-index: 9999;
+}
+
+.cta-container {
+    display: none;
+    margin-top: 320px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+
+.cta {
+    -moz-border-radius: 2px;
+    -moz-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -webkit-border-radius: 2px;
+    -webkit-transition: 0.2s ease-out;
+    background-clip: padding-box;
+    border: 2px solid #3487f7;
+    border-radius: 2px;
+    color: #3487f7;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    height: 36px;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+    margin-bottom: 15px;
+    padding: 0 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s ease-out;
+}
+
+.cta:hover {
+    background-color: #3487f7;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
