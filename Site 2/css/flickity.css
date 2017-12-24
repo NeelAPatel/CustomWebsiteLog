@@ -145,7 +145,7 @@ http://flickity.metafizzy.co
 
 .gallery-cell {
     height: 450px;
-    width: 300px;
+    width: 400px;
     max-width: 500px;
     margin: 20px;
 }
@@ -162,7 +162,7 @@ http://flickity.metafizzy.co
 
 .gallery-cell.is-selected .card {
     height: 450px;
-    width: 300px;
+    width: 400px;
 }
 
 .gallery-cell.is-selected .card .cta-container {
